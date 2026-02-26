@@ -4,110 +4,234 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hyunjung Kho</title>
+  <meta name="description" content="Hyunjung Kho — Computational Materials & Electrochemistry" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="profile">
-      <!-- 프로필 사진 넣고 싶으면 assets/profile.jpg 업로드 -->
-      <img class="avatar" src="assets/profile.jpg" alt="Profile" onerror="this.style.display='none'" />
-      <div class="name">Hyunjung Kho</div>
-      <div class="role">Researcher · Computational Materials</div>
-    </div>
+  <div class="bg"></div>
 
-    <nav class="nav">
-      <a href="#about" class="nav-item active">About</a>
-      <a href="#experience" class="nav-item">Experience</a>
-      <a href="#projects" class="nav-item">Projects</a>
-      <a href="#skills" class="nav-item">Skills</a>
-      <a href="#education" class="nav-item">Education</a>
-      <a href="#contact" class="nav-item">Contact</a>
-      <!-- 이력서 pdf 업로드하면 활성화됨 -->
-      <a href="assets/resume.pdf" class="nav-item" target="_blank" rel="noreferrer">Resume</a>
+  <header class="header">
+    <a class="brand" href="#top">
+      <span class="dot"></span>
+      <span>Hyunjung Kho</span>
+    </a>
+
+    <nav class="topnav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a class="pill" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
     </nav>
+  </header>
 
-    <div class="side-footer">
-      <a class="icon" href="https://github.com/khohj" target="_blank" rel="noreferrer">GH</a>
-      <!-- 링크드인 있으면 넣기 -->
-      <a class="icon" href="#" target="_blank" rel="noreferrer">in</a>
-    </div>
-  </aside>
+  <main class="container" id="top">
+    <!-- HERO -->
+    <section class="hero reveal">
+      <div class="hero-left">
+        <div class="kicker">Computational Materials · Electrochemistry</div>
 
-  <main class="main">
-    <section class="hero" id="top">
-      <h1>Hi, I’m <span class="highlight">Hyunjung</span>.</h1>
-      <p class="tagline">
-        Connecting scales, connecting perspectives.<br/>
-        I study computational materials & electrochemistry—DFT, MOFs, and CO₂ reduction.
-      </p>
+        <h1 class="headline">
+          Hi, I’m <span class="accent">Hyunjung</span>.
+        </h1>
 
-      <div class="cta">
-        <a class="btn light" href="#about">Read More</a>
-        <a class="btn dark" href="#contact">Contact Me</a>
+        <p class="subhead">
+          I explore materials at the atomic scale—DFT, MOFs, and CO₂ reduction.
+          <br/>Turning simulations into clear insights and reproducible workflows.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="social">
+          <a href="https://github.com/khohj" target="_blank" rel="noreferrer">GitHub</a>
+          <span class="sep">•</span>
+          <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span class="sep">•</span>
+          <a href="mailto:you@email.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <img class="avatar" src="assets/profile.jpg" alt="Profile photo" onerror="this.style.display='none'" />
+          <div class="avatar-fallback">
+            <div class="af-title">HK</div>
+            <div class="af-sub">Upload assets/profile.jpg</div>
+          </div>
+        </div>
+
+        <div class="mini-cards">
+          <div class="mini-card">
+            <div class="mini-title">Focus</div>
+            <div class="mini-text">DFT · MOFs · CO₂RR</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-title">Tools</div>
+            <div class="mini-text">VASP · QE · Phonopy · Python</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <h2>About</h2>
-      <p>
-        Write 3–5 lines about you here. (관심분야, 하고 있는 연구, 강점 1~2개)
-      </p>
+    <!-- SECTIONS -->
+    <section class="section reveal" id="about">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>짧고 강하게 3–5줄로. “무엇을 연구하고 / 왜 중요한지 / 내가 잘하는 것 1–2개”.</p>
+      </div>
+      <div class="card">
+        <p>
+          (예시) I’m an aspiring researcher in computational materials and electrochemistry.
+          I’m interested in charge localization, defect chemistry, and reaction energetics for CO₂ reduction.
+          I value clean workflows, clear communication, and reproducible analysis.
+        </p>
+      </div>
     </section>
 
-    <section class="section" id="experience">
-      <h2>Experience</h2>
-      <ul class="list">
-        <li>
-          <div class="li-title">Research Intern — (Lab/Institute)</div>
-          <div class="li-sub">YYYY.MM – YYYY.MM · (City)</div>
-          <div class="li-desc">What you did + one outcome.</div>
-        </li>
-      </ul>
-    </section>
+    <section class="section reveal" id="experience">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>한 줄 임팩트 + 2~3개 불렛으로 “무엇을 했고 어떤 결과가 있었는지”.</p>
+      </div>
 
-    <section class="section" id="projects">
-      <h2>Projects</h2>
       <div class="grid">
-        <a class="card" href="#" target="_blank" rel="noreferrer">
-          <div class="card-title">MIL-125-NH₂ & CO₂ Reduction</div>
-          <div class="card-desc">Polaron/Ti³⁺ formation, defect effects, and electronic structure analysis.</div>
-          <div class="chip">Research</div>
+        <div class="card">
+          <div class="row">
+            <div>
+              <div class="title">Research Intern — (Lab/Institute)</div>
+              <div class="meta">YYYY.MM – YYYY.MM · (City)</div>
+            </div>
+            <div class="tag">Research</div>
+          </div>
+          <ul class="bullets">
+            <li>Built DFT workflows for adsorption / defect / charge analysis.</li>
+            <li>Analyzed electronic structure (DOS/charge density) and summarized key insights.</li>
+            <li>Improved reproducibility with scripts and documented notebooks.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <div>
+              <div class="title">Teaching / TA — (Course)</div>
+              <div class="meta">YYYY.MM – YYYY.MM</div>
+            </div>
+            <div class="tag">Teaching</div>
+          </div>
+          <ul class="bullets">
+            <li>Supported sessions, guided students, and coordinated activities.</li>
+            <li>Prepared materials and communicated clearly in English/Korean.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>프로젝트가 제일 눈에 띄게. 링크 있으면 카드에 붙이면 됨.</p>
+      </div>
+
+      <div class="grid">
+        <a class="card link" href="#" target="_blank" rel="noreferrer">
+          <div class="row">
+            <div>
+              <div class="title">MIL-125-NH₂ & CO₂ Reduction</div>
+              <div class="meta">Polaron/Ti³⁺, defects, electronic structure</div>
+            </div>
+            <div class="tag">DFT</div>
+          </div>
+          <p class="desc">
+            Studied charge localization and defect effects to connect structure → electronic properties → reactivity.
+          </p>
+          <div class="hint">Open ↗</div>
         </a>
-        <a class="card" href="#" target="_blank" rel="noreferrer">
-          <div class="card-title">Phonopy Thermodynamics (SiO₂)</div>
-          <div class="card-desc">Phonon & thermodynamic properties workflow with Phonopy.</div>
-          <div class="chip">Workflow</div>
+
+        <a class="card link" href="#" target="_blank" rel="noreferrer">
+          <div class="row">
+            <div>
+              <div class="title">Phonopy Thermodynamics (SiO₂)</div>
+              <div class="meta">Phonons & thermodynamics workflow</div>
+            </div>
+            <div class="tag">Phonopy</div>
+          </div>
+          <p class="desc">
+            Computed phonon dispersion and thermodynamic quantities with a reproducible pipeline.
+          </p>
+          <div class="hint">Open ↗</div>
         </a>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <h2>Skills</h2>
-      <div class="chips">
-        <span class="pill">Python</span>
-        <span class="pill">DFT</span>
-        <span class="pill">VASP</span>
-        <span class="pill">Quantum ESPRESSO</span>
-        <span class="pill">Phonopy</span>
-        <span class="pill">Data Analysis</span>
+    <section class="section reveal" id="skills">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>툴/개념/역량을 묶어서 보여주면 더 고급져 보임.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="title">Simulation</div>
+          <div class="pills">
+            <span class="pill2">DFT</span><span class="pill2">VASP</span><span class="pill2">Quantum ESPRESSO</span>
+            <span class="pill2">Phonopy</span><span class="pill2">VASPsol</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="title">Analysis</div>
+          <div class="pills">
+            <span class="pill2">Python</span><span class="pill2">NumPy</span><span class="pill2">Matplotlib</span>
+            <span class="pill2">Charge density</span><span class="pill2">DOS/Band</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="education">
-      <h2>Education</h2>
-      <ul class="list">
-        <li>
-          <div class="li-title">UNIST — B.S.</div>
-          <div class="li-sub">2022 – 2026</div>
-          <div class="li-desc">Major / track (원하는대로 수정)</div>
-        </li>
-      </ul>
+    <section class="section reveal" id="education">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p>학력은 짧게, 트랙/연구관심으로 마무리.</p>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div>
+            <div class="title">UNIST — B.S.</div>
+            <div class="meta">2022 – 2026 · (Major)</div>
+          </div>
+          <div class="tag">Student</div>
+        </div>
+        <p class="desc">Interests: computational materials, electrochemistry, CO₂ reduction catalysts.</p>
+      </div>
     </section>
 
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
-      <p>GitHub: <a href="https://github.com/khohj" target="_blank" rel="noreferrer">@khohj</a></p>
+    <section class="section reveal" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>메일/깃헙/링크드인만 깔끔하게.</p>
+      </div>
+
+      <div class="card">
+        <div class="contact">
+          <a class="contact-item" href="mailto:you@email.com">
+            <span class="label">Email</span>
+            <span class="value">you@email.com</span>
+          </a>
+          <a class="contact-item" href="https://github.com/khohj" target="_blank" rel="noreferrer">
+            <span class="label">GitHub</span>
+            <span class="value">@khohj</span>
+          </a>
+          <a class="contact-item" href="#" target="_blank" rel="noreferrer">
+            <span class="label">LinkedIn</span>
+            <span class="value">Add your link</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
