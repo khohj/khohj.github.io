@@ -1,11 +1,120 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hyunjung Homepage</title>
-  </head>
-  <body>
-    <h1>Welcome to Hyunjung's Page</h1>
-    <p>GitHub Pages 연결 성공 🎉</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hyunjung Kho</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="profile">
+      <!-- 프로필 사진 넣고 싶으면 assets/profile.jpg 업로드 -->
+      <img class="avatar" src="assets/profile.jpg" alt="Profile" onerror="this.style.display='none'" />
+      <div class="name">Hyunjung Kho</div>
+      <div class="role">Researcher · Computational Materials</div>
+    </div>
+
+    <nav class="nav">
+      <a href="#about" class="nav-item active">About</a>
+      <a href="#experience" class="nav-item">Experience</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#education" class="nav-item">Education</a>
+      <a href="#contact" class="nav-item">Contact</a>
+      <!-- 이력서 pdf 업로드하면 활성화됨 -->
+      <a href="assets/resume.pdf" class="nav-item" target="_blank" rel="noreferrer">Resume</a>
+    </nav>
+
+    <div class="side-footer">
+      <a class="icon" href="https://github.com/khohj" target="_blank" rel="noreferrer">GH</a>
+      <!-- 링크드인 있으면 넣기 -->
+      <a class="icon" href="#" target="_blank" rel="noreferrer">in</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="hero" id="top">
+      <h1>Hi, I’m <span class="highlight">Hyunjung</span>.</h1>
+      <p class="tagline">
+        Connecting scales, connecting perspectives.<br/>
+        I study computational materials & electrochemistry—DFT, MOFs, and CO₂ reduction.
+      </p>
+
+      <div class="cta">
+        <a class="btn light" href="#about">Read More</a>
+        <a class="btn dark" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p>
+        Write 3–5 lines about you here. (관심분야, 하고 있는 연구, 강점 1~2개)
+      </p>
+    </section>
+
+    <section class="section" id="experience">
+      <h2>Experience</h2>
+      <ul class="list">
+        <li>
+          <div class="li-title">Research Intern — (Lab/Institute)</div>
+          <div class="li-sub">YYYY.MM – YYYY.MM · (City)</div>
+          <div class="li-desc">What you did + one outcome.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <a class="card" href="#" target="_blank" rel="noreferrer">
+          <div class="card-title">MIL-125-NH₂ & CO₂ Reduction</div>
+          <div class="card-desc">Polaron/Ti³⁺ formation, defect effects, and electronic structure analysis.</div>
+          <div class="chip">Research</div>
+        </a>
+        <a class="card" href="#" target="_blank" rel="noreferrer">
+          <div class="card-title">Phonopy Thermodynamics (SiO₂)</div>
+          <div class="card-desc">Phonon & thermodynamic properties workflow with Phonopy.</div>
+          <div class="chip">Workflow</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="pill">Python</span>
+        <span class="pill">DFT</span>
+        <span class="pill">VASP</span>
+        <span class="pill">Quantum ESPRESSO</span>
+        <span class="pill">Phonopy</span>
+        <span class="pill">Data Analysis</span>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <ul class="list">
+        <li>
+          <div class="li-title">UNIST — B.S.</div>
+          <div class="li-sub">2022 – 2026</div>
+          <div class="li-desc">Major / track (원하는대로 수정)</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@email.com">you@email.com</a></p>
+      <p>GitHub: <a href="https://github.com/khohj" target="_blank" rel="noreferrer">@khohj</a></p>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Hyunjung Kho · Built with GitHub Pages
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
