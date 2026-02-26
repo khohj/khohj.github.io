@@ -80,7 +80,7 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
   display:grid;
   grid-template-columns: 1.15fr .85fr;
   gap:18px;
-  padding:26px 0 12px;
+  align-items: center;   /* ⭐ 핵심 */
 }
 
 .kicker{
@@ -161,8 +161,9 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
 .mini-cards{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:10px;
-  margin-top:12px;
+  gap:12px;
+  margin-top:18px;
+  max-width:420px;
 }
 .mini-card{
   border-radius: var(--r);
