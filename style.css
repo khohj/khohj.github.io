@@ -247,24 +247,18 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
 }
 .title{font-weight:850; letter-spacing:-0.01em}
 .meta{color:var(--muted); font-size:13px; margin-top:6px}
-/* Education spacing fix */
-#education .edu-block{
-  margin-bottom: 26px;   /* 학위 덩어리 간격 */
-}
-
-#education .edu-block:last-child{
-  margin-bottom: 0;
-}
-
+/* Education 톤 다운 */
 #education .title{
-  font-size: 22px;
-  line-height: 1.3;
+  font-size: 18px;     /* 적당히 차분 */
+  font-weight: 500;    /* 볼드 제거 */
+  letter-spacing: -0.01em;
+  line-height: 1.4;
 }
 
 #education .meta{
+  font-size: 14px;
+  font-weight: 400;
   margin-top: 6px;
-  font-size: 9px;
-}
 }
 .tag{
   font-size:9px;
