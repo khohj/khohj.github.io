@@ -247,7 +247,10 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
 }
 .title{font-weight:850; letter-spacing:-0.01em}
 .meta{color:var(--muted); font-size:13px; margin-top:6px}
-
+/* Education: MS와 BS 사이 간격 */
+#education .meta + .title{
+  margin-top: 20px;   /* 16~24px 사이에서 조절 */
+}
 .tag{
   font-size:12px;
   padding:6px 10px;
