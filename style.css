@@ -247,9 +247,24 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
 }
 .title{font-weight:850; letter-spacing:-0.01em}
 .meta{color:var(--muted); font-size:13px; margin-top:6px}
-/* Education: MS와 BS 사이 간격 */
-#education .meta + .title{
-  margin-top: 20px;   /* 16~24px 사이에서 조절 */
+/* Education spacing fix */
+#education .edu-block{
+  margin-bottom: 26px;   /* 학위 덩어리 간격 */
+}
+
+#education .edu-block:last-child{
+  margin-bottom: 0;
+}
+
+#education .title{
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+#education .meta{
+  margin-top: 6px;
+  font-size: 15px;
+}
 }
 .tag{
   font-size:12px;
