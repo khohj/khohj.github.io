@@ -247,19 +247,7 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
 }
 .title{font-weight:850; letter-spacing:-0.01em}
 .meta{color:var(--muted); font-size:13px; margin-top:6px}
-/* Education 톤 다운 */
-#education .title{
-  font-size: 18px;     /* 적당히 차분 */
-  font-weight: 500;    /* 볼드 제거 */
-  letter-spacing: -0.01em;
-  line-height: 1.4;
-}
 
-#education .meta{
-  font-size: 14px;
-  font-weight: 400;
-  margin-top: 6px;
-}
 .tag{
   font-size:9px;
   padding:6px 10px;
@@ -319,4 +307,16 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
   .mini-cards{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr}
+}
+/* ===== FORCE Education style override ===== */
+#education .card .title{
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+#education .card .meta{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  margin-top: 6px !important;
 }
