@@ -263,11 +263,11 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
 
 #education .meta{
   margin-top: 6px;
-  font-size: 11px;
+  font-size: 9px;
 }
 }
 .tag{
-  font-size:10px;
+  font-size:9px;
   padding:6px 10px;
   border-radius:999px;
   background: rgba(47,102,255,.10);
