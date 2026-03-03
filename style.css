@@ -214,6 +214,31 @@ a:hover{text-decoration:underline; text-underline-offset:3px}
   gap:14px;
 }
 
+/* ===== EXPERIENCE: horizontal card slider ===== */
+#experience .carousel{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+  padding: 6px 2px 14px;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+#experience .carousel .card{
+  flex: 0 0 520px;   /* 카드 고정 폭 */
+  max-width: 520px;
+  scroll-snap-align: start;
+}
+
+/* 모바일에서는 화면에 맞게 */
+@media (max-width: 640px){
+  #experience .carousel .card{
+    flex-basis: 85vw;
+    max-width: 85vw;
+  }
+}
+
 .row{
   display:flex;
   align-items:flex-start;
